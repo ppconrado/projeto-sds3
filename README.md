@@ -19,8 +19,6 @@ Objetivos do projeto Part 1
 
     Criar pastas do projeto
 
-DevSuperior no Instagram
-
     Conferir Yarn
 
 yarn -v
