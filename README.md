@@ -8,6 +8,14 @@
         BACKEND SERVER/DB (Spring Boot)
 
  https://sds3-joseconrado.herokuapp.com
+ 
+ 
+     Desafio Técnico: Projeto elaborado utilizando laptop 32 bits 2007
+
+     - windows 7
+     - 32 bits Intel Centrino Duo
+     - vscode (extensions para ambiente Spring Boot) <- Versão STS Spring Boot não há versão em 32 bits.
+     - node 12
     
 
   //////////////////////////////// Part 1: ///////////////////////////////////////////////////////////////////////////////////////////
