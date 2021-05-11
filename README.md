@@ -1,11 +1,17 @@
-Semana Spring React
-https://raw.githubusercontent.com/devsuperior/bds-assets/main/sds/sds3-mc.png
+Projeto: Spring React
 
-FRONTEND APP
-https://joseconrado.netlify.app
 
-BACKEND SERVER DB
-https://sds3-joseconrado.herokuapp.com
+
+FRONTEND APP (React)
+
+    https://joseconrado.netlify.app
+
+
+BACKEND SERVER/DB (Spring Boot)
+
+    https://sds3-joseconrado.herokuapp.com
+    
+
 
 //////////////////////////////// Part 1: ////////////////////////////////////////////////////
 
@@ -238,7 +244,10 @@ Objetivos do projeto Part 2
 Entendendo o modelo de dados
 
     https://github.com/devsuperior/sds3/raw/main/_assets/dados.xlsx
-
+    
+Modelo das entidades
+   
+    https://raw.githubusercontent.com/devsuperior/bds-assets/main/sds/sds3-mc.png
 
 Passo 1: configuração de segurança
 
