@@ -24,8 +24,8 @@ Objetivos do projeto Part 1
 
     Conferir Yarn
 
-yarn -v
-npm install --global yarn
+      yarn -v
+      npm install --global yarn
 
 Passo 1: criar projetos
 
