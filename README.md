@@ -1,16 +1,16 @@
-                                    Projeto: Spring React
+ PROJETO SPRING - REACT
 
         FRONTEND APP (React)
 
-https://joseconrado.netlify.app
+ https://joseconrado.netlify.app
 
 
         BACKEND SERVER/DB (Spring Boot)
 
-https://sds3-joseconrado.herokuapp.com
+ https://sds3-joseconrado.herokuapp.com
     
 
-//////////////////////////////// Part 1: ////////////////////////////////////////////////////
+  //////////////////////////////// Part 1: ////////////////////////////////////////////////////
 
 Objetivos do projeto Part 1
 
