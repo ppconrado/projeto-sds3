@@ -22,7 +22,7 @@ const DataTable = () => {
     //   .get(`${BASE_URL}/sales?page=${activePage}&size=20&sort=date,desc`)
     axios
       .get(
-        `https://sds3-joseconrado.herokuapp.com//sales?page=${activePage}&size=20&sort=date,desc`
+        `https://sds3-joseconrado.herokuapp.com/sales?page=${activePage}&size=20&sort=date,desc`
       )
       .then((response) => {
         setPage(response.data);
