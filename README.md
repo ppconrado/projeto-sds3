@@ -274,20 +274,20 @@ Passo 1: configuração de segurança
 Passo 2: criar as entidades e o seed do banco
 Modelo conceitual
 
-Image
+
 application.properties
 
-spring.jpa.open-in-view=false
+    spring.jpa.open-in-view=false
 
-spring.datasource.url=jdbc:h2:mem:testdb
-spring.datasource.username=sa
-spring.datasource.password=
+    spring.datasource.url=jdbc:h2:mem:testdb
+    spring.datasource.username=sa
+    spring.datasource.password=
 
-spring.h2.console.enabled=true
-spring.h2.console.path=/h2-console
+    spring.h2.console.enabled=true
+    spring.h2.console.path=/h2-console
 
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
+    spring.jpa.show-sql=true
+    spring.jpa.properties.hibernate.format_sql=true
 
 Seed do banco de dados
 
@@ -473,8 +473,6 @@ Seed do banco de dados
 Passo 3: Estruturar o projeto em camadas
 Padrão camadas adotado
 
-Image
-
     Criar repositories
     Criar DTO's
     Criar service
@@ -502,39 +500,39 @@ Passo 6: Validação no Postgres local
 
 application.properties
 
-spring.profiles.active=test
+    spring.profiles.active=test
 
-spring.jpa.open-in-view=false
+    spring.jpa.open-in-view=false
 
 application-dev.properties
 
-#spring.jpa.properties.javax.persistence.schema-generation.create-source=metadata
-#spring.jpa.properties.javax.persistence.schema-generation.scripts.action=create
-#spring.jpa.properties.javax.persistence.schema-generation.scripts.create-target=create.sql
-#spring.jpa.properties.hibernate.hbm2ddl.delimiter=;
+    #spring.jpa.properties.javax.persistence.schema-generation.create-source=metadata
+    #spring.jpa.properties.javax.persistence.schema-generation.scripts.action=create
+    #spring.jpa.properties.javax.persistence.schema-generation.scripts.create-target=create.sql
+    #spring.jpa.properties.hibernate.hbm2ddl.delimiter=;
 
-spring.datasource.url=jdbc:postgresql://localhost:5432/dsvendas
-spring.datasource.username=postgres
-spring.datasource.password=1234567
+    spring.datasource.url=jdbc:postgresql://localhost:5432/dsvendas
+    spring.datasource.username=postgres
+    spring.datasource.password=1234567
 
-spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
-spring.jpa.hibernate.ddl-auto=none
+    spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+    spring.jpa.hibernate.ddl-auto=none
 
 application-prod.properties
 
-spring.datasource.url=${DATABASE_URL}
+    spring.datasource.url=${DATABASE_URL}
 
-application.properties
+    application.properties
 
-spring.profiles.active=${APP_PROFILE:test}
+    spring.profiles.active=${APP_PROFILE:test}
 
-spring.jpa.open-in-view=false
+    spring.jpa.open-in-view=false
 
 system.properties
 
-java.runtime.version=11
+    java.runtime.version=11
 
-    COMMIT: First homolog
+   COMMIT: First homolog
 
 Passo 7: Implantação no Heroku
 
@@ -580,20 +578,20 @@ yarn add @types/react-router-dom -D
 
 Passo 2: Página Home e navegações
 
-<div className="container">
-    <div className="jumbotron">
-        <h1 className="display-4">DSVendas</h1>
-        <p className="lead">Analise o desempenho das suas vendas por diferentes perspectivas</p>
-        <hr/>
-        <p>Esta aplicação consiste em exibir um dashboard a partir de dados fornecidos por um back end construído com Spring Boot.</p>
+    <div className="container">
+        <div className="jumbotron">
+            <h1 className="display-4">DSVendas</h1>
+            <p className="lead">Analise o desempenho das suas vendas por diferentes perspectivas</p>
+            <hr/>
+            <p>Esta aplicação consiste em exibir um dashboard a partir de dados fornecidos por um back end construído com Spring Boot.</p>
+        </div>
     </div>
-</div>
 
-    Fazer um link na Home para Dashboard
+   Fazer um link na Home para Dashboard
 
-    Fazer um link na NavBar para Home
+   Fazer um link na NavBar para Home
 
-    COMMIT: Home, navigation
+   COMMIT: Home, navigation
 
 Passo 3: First request
 
@@ -613,11 +611,11 @@ yarn add axios
 
 Passo 4: DonutChart integration
 
-Hook: useState
-Manter estado no componente
+    Hook: useState
+    Manter estado no componente 
 
-Hook: useEffect
-Executar algo na instanciação ou destruição do componente, observar estado
+    Hook: useEffect
+    Executar algo na instanciação ou destruição do componente, observar estado
 
     COMMIT: DonutChart integration
 
@@ -655,10 +653,10 @@ return format(dtDateOnly, pattern);
 
 Passo 7: Pagination
 
-Props
-Argumentos que um componente React pode receber
+    Props
+    Argumentos que um componente React pode receber
 
-    Criar componente Pagination
+   Criar componente Pagination
 
 <div className="row d-flex justify-content-center">
     <nav>
