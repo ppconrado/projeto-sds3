@@ -26,11 +26,11 @@ npm install --global yarn
 
 Passo 1: criar projetos
 
-    Criar projeto ReactJS com create-react-app:
+   Criar projeto ReactJS com create-react-app:
 
-npx create-react-app frontend --template typescript
+    npx create-react-app frontend --template typescript
 
-    Lembrete: excluir repositório Git do projeto ReactJS
+   Lembrete: excluir repositório Git do projeto ReactJS
 
     Criar projeto Spring Boot no Spring Initializr com as seguintes dependências:
         Web
@@ -44,177 +44,179 @@ npx create-react-app frontend --template typescript
         Menu Project -> Clean
         Apagar pasta .m2 e deixar o STS refazer o download
 
-    COMMIT: Project created
+COMMIT: Project created
 
     Lembrete: ver extensões e arquivos ocultos
 
-    Salvar o projeto no seu Github
+Salvar o projeto no seu Github
 
-git config --global user.name <seu nome>
-git config --global user.email <seu email>
+    git config --global user.name <seu nome>
+    git config --global user.email <seu email>
 
-git init
+    git init
 
-git add .
+    git add .
 
-git commit -m "Project created"
+    git commit -m "Project created"
 
-git remote add origin <seu endereço>
+    git remote add origin <seu endereço>
 
-git push -u origin main
+    git push -u origin main
 
 Passo 2: "limpar" o projeto ReactJS
 
     Limpar projeto ReactJS / tsconfig.json
-    Arquivo _redirects
+    
+Arquivo _redirects
 
-/\* /index.html 200
+    /\* /index.html 200
 
     COMMIT: Project clean
 
 Passo 3: adicionar Bootstrap e CSS ao projeto
 
-    Bootstrap
+Bootstrap
 
-yarn add bootstrap
+    yarn add bootstrap
 
-(index.tsx) import 'bootstrap/dist/css/bootstrap.css';
+    (index.tsx) import 'bootstrap/dist/css/bootstrap.css';
 
-    Assets e CSS
+Assets e CSS
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-:root {
---color-primary: #FF8400;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+    :root {
+    --color-primary: #FF8400;
+    }
 
-html, body {
-height: 100%;
-font-family: "Ubuntu", sans-serif;
-}
+    html, body {
+    height: 100%;
+    font-family: "Ubuntu", sans-serif;
+    }
 
-#root {
-display: flex;
-flex-direction: column;
-height: 100%;
-}
+    #root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    }
 
-.content {
-flex: 1 0 auto;
-}
+    .content {
+    flex: 1 0 auto;
+    }
 
-.footer {
-flex-shrink: 0;
-text-align: center;
-}
+    .footer {
+    flex-shrink: 0;
+    text-align: center;
+    }
 
-.bg-primary {
-background-color: var(--color-primary) !important;
-}
+    .bg-primary {
+    background-color: var(--color-primary) !important;
+    }
 
-.text-primary {
-color: var(--color-primary) !important;
-}
+    .text-primary {
+    color: var(--color-primary) !important;
+    }
 
-(index.tsx) import 'assets/css/styles.css';
+   (index.tsx) import 'assets/css/styles.css';
 
-    COMMIT: Bootstrap
+COMMIT: Bootstrap
 
 Passo 4: adicionar componentes estáticos básicos
 
-    Navbar
+  Navbar
 
-<div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-light border-bottom shadow-sm">
-  <div className="container">
-    <nav className="my-2 my-md-0 mr-md-3">
-      <img src={ImgDsDark} alt="DevSuperior" width="120" />
-    </nav>
-  </div>
-</div>
+    <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-light border-bottom shadow-sm">
+      <div className="container">
+        <nav className="my-2 my-md-0 mr-md-3">
+          <img src={ImgDsDark} alt="DevSuperior" width="120" />
+        </nav>
+      </div>
+    </div>
 
-    Footer
+  Footer
 
-<footer className="footer mt-auto py-3 bg-dark">
-  <div className="container">
-    <p className="text-light">App desenvolvido por <a href="https://github.com/acenelio" target="_blank" rel="noreferrer">Nelio Alves</a></p>
-    <p className="text-light"><small><strong>Semana Spring React</strong><br/>
-      Evento promovido pela escola DevSuperior: <a href="https://instagram.com/devsuperior.ig" target="_blank" rel="noreferrer">@devsuperior.ig</a></small></p>
-  </div>
-</footer>
+    <footer className="footer mt-auto py-3 bg-dark">
+      <div className="container">
+        <p className="text-light">App desenvolvido por <a href="https://github.com/ppconrado" target="_blank" rel="noreferrer">Jose Paulo Conrado</a></p>
+        <p className="text-light"><small><strong>Semana Spring React</strong><br/>
+          Evento promovido pela escola DevSuperior: <a href="https://instagram.com/devsuperior.ig" target="_blank" rel="noreferrer">@devsuperior.ig</a></small></p>
+      </div>
+    </footer>
 
-    DataTable
+  DataTable
 
-<div className="table-responsive">
-    <table className="table table-striped table-sm">
-        <thead>
-            <tr>
-                <th>Data</th>
-                <th>Vendedor</th>
-                <th>Clientes visitados</th>
-                <th>Negócios fechados</th>
-                <th>Valor</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>22/04/2021</td>
-                <td>Barry Allen</td>
-                <td>34</td>
-                <td>25</td>
-                <td>15017.00</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+    <div className="table-responsive">
+        <table className="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Vendedor</th>
+                    <th>Clientes visitados</th>
+                    <th>Negócios fechados</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>22/04/2021</td>
+                    <td>Barry Allen</td>
+                    <td>34</td>
+                    <td>25</td>
+                    <td>15017.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    COMMIT: Basic static components
+  COMMIT: Basic static components
 
 Passo 5: adicionar gráficos estáticos
 
-    Apex Charts
+Apex Charts
 
-yarn add apexcharts
-yarn add react-apexcharts
+    yarn add apexcharts
+    yarn add react-apexcharts
 
-    BarChart
+BarChart
 
-const options = {
-plotOptions: {
-bar: {
-horizontal: true,
-}
-},
-};
+    const options = {
+    plotOptions: {
+    bar: {
+    horizontal: true,
+    }
+    },
+    };
 
-const mockData = {
-labels: {
-categories: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
-},
-series: [
-{
-name: "% Sucesso",
-data: [43.6, 67.1, 67.7, 45.6, 71.1]  
- }
-]
-};
+    const mockData = {
+    labels: {
+    categories: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
+    },
+    series: [
+    {
+    name: "% Sucesso",
+    data: [43.6, 67.1, 67.7, 45.6, 71.1]  
+     }
+    ]
+    };
 
-    DonutChart
+DonutChart
 
-const mockData = {
-series: [477138, 499928, 444867, 220426, 473088],
-labels: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
-}
+    const mockData = {
+    series: [477138, 499928, 444867, 220426, 473088],
+    labels: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
+    }
 
-const options = {
-legend: {
-show: true
-}
-}
+    const options = {
+    legend: {
+    show: true
+    }
+    }
 
-    COMMIT: Static charts
+ COMMIT: Static charts
 
 Passo 6: implantação no Netlify
 
     Publicação no Netlify
+    
         Comando: yarn build
         Diretório: build
         Deploy! (vai quebrar)
@@ -235,7 +237,7 @@ Objetivos do projeto Part 2
 
 Entendendo o modelo de dados
 
-https://github.com/devsuperior/sds3/raw/main/_assets/dados.xlsx
+    https://github.com/devsuperior/sds3/raw/main/_assets/dados.xlsx
 
 
 Passo 1: configuração de segurança
@@ -468,9 +470,10 @@ Seed do banco de dados
     INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,71,18,6436.0,'2019-10-07');
     INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,78,60,6723.0,'2019-10-07');
 
-   COMMIT: Domain model, database seed
+  COMMIT: Domain model, database seed
 
 Passo 3: Estruturar o projeto em camadas
+
 Padrão camadas adotado
 
     Criar repositories
@@ -536,17 +539,17 @@ system.properties
 
 Passo 7: Implantação no Heroku
 
-    Criar app no Heroku
-    Provisionar banco Postgres
-    Definir variável APP_PROFILE=prod
-    Conectar ao banco via pgAdmin
-    Criar seed do banco
+Criar app no Heroku
+Provisionar banco Postgres
+Definir variável APP_PROFILE=prod
+Conectar ao banco via pgAdmin
+Criar seed do banco
 
-heroku -v
-heroku login
-heroku git:remote -a <nome-do-app>
-git remote -v
-git subtree push --prefix backend heroku main
+    heroku -v
+    heroku login
+    heroku git:remote -a <nome-do-app>
+    git remote -v
+    git subtree push --prefix backend heroku main
 
 //////////////////////////////// Part 3: ////////////////////////////////////////////////////
 
@@ -566,11 +569,11 @@ Objetivos do projeto Part 3
 
 Passo 1: Rotas
 
-    Instalar React Router DOM
+Instalar React Router DOM
 
-yarn add react-router-dom
+    yarn add react-router-dom
 
-yarn add @types/react-router-dom -D
+    yarn add @types/react-router-dom -D
 
     Criar páginas Home e Dashboard
     Criar arquivo de rotas Routes.tsx
@@ -595,19 +598,19 @@ Passo 2: Página Home e navegações
 
 Passo 3: First request
 
-    Instalar Axios
+Instalar Axios
 
-yarn add axios
+    yarn add axios
 
-    Definir BASE_URL
+  Definir BASE_URL
 
-    Definir tipo SaleSum
+  Definir tipo SaleSum
 
-    Definir tipo local ChartData em DonutChart
+  Definir tipo local ChartData em DonutChart
 
-    Fazer a requisição e tratar os dados
+  Fazer a requisição e tratar os dados
 
-    COMMIT: First request
+COMMIT: First request
 
 Passo 4: DonutChart integration
 
@@ -617,39 +620,39 @@ Passo 4: DonutChart integration
     Hook: useEffect
     Executar algo na instanciação ou destruição do componente, observar estado
 
-    COMMIT: DonutChart integration
+COMMIT: DonutChart integration
 
 Passo 5: BarChart integration
 
-    Definir função auxiliar round:
+  Definir função auxiliar round:
 
-export const round = (value: number, precision: number) => {
-var multiplier = Math.pow(10, precision || 0);
-return Math.round(value \* multiplier) / multiplier;
-}
+    export const round = (value: number, precision: number) => {
+    var multiplier = Math.pow(10, precision || 0);
+    return Math.round(value \* multiplier) / multiplier;
+    }
 
-    Definir tipo SaleSuccess
+  Definir tipo SaleSuccess
 
-    Definir tipo local ChartData em DonutChart
+  Definir tipo local ChartData em DonutChart
 
-    COMMIT: BarChart integration
+COMMIT: BarChart integration
 
 Passo 6: DataTable integration
 
-    Instalar date-fns ao projeto
+  Instalar date-fns ao projeto
 
-yarn add date-fns
+    yarn add date-fns
 
-    Criar tipos Seller, Sale, SalePage
-    Criar função auxiliar formatLocalDate
+  Criar tipos Seller, Sale, SalePage
+  Criar função auxiliar formatLocalDate
 
-export const formatLocalDate = (date: string, pattern: string) => {
-const dt = new Date(date);
-const dtDateOnly = new Date(dt.valueOf() + dt.getTimezoneOffset() _ 60 _ 1000);
-return format(dtDateOnly, pattern);
-}
+    export const formatLocalDate = (date: string, pattern: string) => {
+    const dt = new Date(date);
+    const dtDateOnly = new Date(dt.valueOf() + dt.getTimezoneOffset() _ 60 _ 1000);
+    return format(dtDateOnly, pattern);
+    }
 
-    COMMIT: DataTable integration
+COMMIT: DataTable integration
 
 Passo 7: Pagination
 
@@ -658,20 +661,20 @@ Passo 7: Pagination
 
    Criar componente Pagination
 
-<div className="row d-flex justify-content-center">
-    <nav>
-        <ul className="pagination">
-            <li className="page-item">
-                <button className="page-link">Anterior</button>
-            </li>
-            <li className="page-item disabled">
-                <span className="page-link">1</span>
-            </li>
-            <li className="page-item disabled">
-                <button className="page-link">Próxima</button>
-            </li>
-        </ul>
-    </nav>
-</div>
+    <div className="row d-flex justify-content-center">
+        <nav>
+            <ul className="pagination">
+                <li className="page-item">
+                    <button className="page-link">Anterior</button>
+                </li>
+                <li className="page-item disabled">
+                    <span className="page-link">1</span>
+                </li>
+                <li className="page-item disabled">
+                    <button className="page-link">Próxima</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
-    COMMIT: Pagination
+COMMIT: Pagination
