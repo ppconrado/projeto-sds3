@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Chart from "react-apexcharts";
-import { BASE_URL } from "utils/requests";
+// import { BASE_URL } from "utils/requests";
 import { SaleSum } from "types/sale";
 
 type ChartData = {
@@ -16,13 +16,16 @@ const DonutChart = () => {
   });
 
   useEffect(() => {
-    axios.get(`${BASE_URL}/sales/amount-by-seller`).then((response) => {
-      const data = response.data as SaleSum[];
-      const myLabels = data.map((x) => x.sellerName);
-      const mySeries = data.map((x) => x.sum);
+    // axios.get(`${BASE_URL}/sales/amount-by-seller`).then((response) => {
+    axios
+      .get(`https://sds3-joseconrado.herokuapp.com/sales/amount-by-seller`)
+      .then((response) => {
+        const data = response.data as SaleSum[];
+        const myLabels = data.map((x) => x.sellerName);
+        const mySeries = data.map((x) => x.sum);
 
-      setChartData({ labels: myLabels, series: mySeries });
-    });
+        setChartData({ labels: myLabels, series: mySeries });
+      });
   }, []);
 
   // //FORMA ERRADA
