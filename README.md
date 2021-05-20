@@ -18,7 +18,7 @@
      - node 12
     
     
-    Certificado de conclusão do treinamento.
+  Certificado de conclusão do treinamento.
    
  https://learn.devsuperior.com/certificados/125564
  
