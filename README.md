@@ -17,7 +17,11 @@
      - vscode (extensions para ambiente Spring Boot) <- STS Spring Boot - não há versão em 32 bits.
      - node 12
     
-
+    
+    Certificado de conclusão do treinamento.
+   
+ https://learn.devsuperior.com/certificados/125564
+ 
   //////////////////////////////// Part 1: ///////////////////////////////////////////////////////////////////////////////////////////
 
 Objetivos do projeto Part 1
