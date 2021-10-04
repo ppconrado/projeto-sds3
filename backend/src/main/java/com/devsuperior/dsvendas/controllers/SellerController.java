@@ -27,3 +27,7 @@ public class SellerController {
 
     
 }
+// CONTROLLER <->(dto) <-> SERVICE <-> REPOSITORY <-> ENTITY
+// RESPONDE AS REQUISIÇÕES DO FRONTEND (ENDPOINT)
+// service.find() vem do SellerService
+// responde enviando uma lista de vendedores(SellertDTO) para o FRONTEND

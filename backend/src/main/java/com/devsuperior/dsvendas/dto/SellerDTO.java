@@ -44,3 +44,5 @@ public class SellerDTO implements Serializable {
 
     
 }
+
+// CONTROLLER <->(dto) <-> SERVICE <-> REPOSITORY <-> ENTITY

@@ -22,3 +22,9 @@ public class SellerService {
     }
     
 }
+
+// CONTROLLER <->(dto) <-> SERVICE <-> REPOSITORY <-> ENTITY
+// chama um repository.findAll() do SellerRepository 
+// Busca todos os sellers do banco (entidade Seller) e joga numa lista SellerDTO
+// SellerDTO esta desaclopado da entidade Seller
+// map converte cada elemento da lista

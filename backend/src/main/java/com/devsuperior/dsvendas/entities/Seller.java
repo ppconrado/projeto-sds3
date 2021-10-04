@@ -19,6 +19,8 @@ public class Seller {
     private Long id;
     private String name;
 
+// DECLARAR A ASSOCIAÇÃO ENTRE ENTIDADES
+
     @OneToMany(mappedBy = "seller")
     private List<Sale> sales = new ArrayList<>();
 

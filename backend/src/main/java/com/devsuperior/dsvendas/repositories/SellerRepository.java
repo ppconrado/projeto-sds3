@@ -8,3 +8,6 @@ import com.devsuperior.dsvendas.entities.Seller;
 public interface SellerRepository extends JpaRepository<Seller, Long> {
     
 }
+
+// CONTROLLER <->(dto) <-> SERVICE <-> REPOSITORY <-> ENTITY
+// BUSCA DADOS NO BANCO DE DADOS (salva deleta insere atualiza etc)
