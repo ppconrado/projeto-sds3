@@ -2,7 +2,7 @@
 
         FRONTEND APP (React)
 
- https://joseconrado.netlify.app
+ https://dsvendas-joseconrado.netlify.app
 
 
         BACKEND SERVER/DB (Spring Boot)
