@@ -1,3 +1,7 @@
+# DSVendas - WEB App - Busca lista de vendas e apresntação em dashboard
+
+![ppconrado github img](https://raw.githubusercontent.com/ppconrado/bds-assets/master/img/DSVENDAS.png)
+ 
  PROJETO SPRING - REACT
 
         FRONTEND APP (React)
